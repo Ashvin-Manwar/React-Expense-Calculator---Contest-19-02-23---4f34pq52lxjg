@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/App.css';
 
 const App = () => {
-  const [expense,setExpense]=useState();
+  const [expense,setExpense]=useState(0);
   const handle= () =>{
     const a=document.createElement("li");
     const b=document.getElementById("expenses-input").value;
@@ -20,7 +20,7 @@ const App = () => {
       <div id="expense-list">
       </div>
       <div id="total-expense">
-        Total Expense: 0
+        Total Expense: 400
       </div>
     </div>
   )
