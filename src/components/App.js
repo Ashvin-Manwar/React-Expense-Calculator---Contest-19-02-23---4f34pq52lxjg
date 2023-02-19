@@ -2,12 +2,12 @@ import React from 'react'
 import '../styles/App.css';
 
 const App = () => {
-  const [expenses,setExpenses]=useState(0);
+  const [expense,setExpense]=useState();
   const handle= () =>{
     const a=document.createElement("li");
-    const b=document.getelementById("expenses-input").value;
+    const b=document.getElementById("expenses-input").value;
     a.innerHTML=b;
-    document.getElementById("wxpense-list").appendChild(a);
+    document.getElementById("expense-list").appendChild(a);
     const c=b.indexOf('-');
     const d=b.slice(c+1).trim();
     setExpense(parseInt(d)+expense);
