@@ -16,7 +16,7 @@ const App = () => {
   return (
     <div id="main">
       <input id="expense-input" />
-      <button id="expense-button" onClick={handle}>Add Expense</button>
+      <button id="expense-button" onClick={handle} >Add Expense</button>
       <div id="expense-list">
       </div>
       <div id="total-expense">
